@@ -30,13 +30,13 @@ public class TestSpringBean implements InitializingBean, DisposableBean, BeanNam
 	  
 	@Override
 	public void afterPropertiesSet() throws Exception {
-		System.out.println("====afterPropertiesSet executed=====");
+		System.out.println("====afterPropertiesSet executed=====TestSpringBean");
 		
 	}
 
 	@Override
 	public void destroy() throws Exception {
-		System.out.println("====destroy of disposable bean executed====");
+		System.out.println("====destroy of disposable bean executed====TestSpringBean");
 		
 	}
 	
@@ -45,12 +45,12 @@ public class TestSpringBean implements InitializingBean, DisposableBean, BeanNam
 	 */
 	@PostConstruct
 	public void postConstruct() {
-		System.out.println("===postConstruct jsr executed====");
+		System.out.println("===postConstruct jsr executed==== TestSpringBean");
 	}
 	
 	@PreDestroy
 	public void preDestroy() {
-		System.out.println("===preDestroy jsr executed====");
+		System.out.println("===preDestroy jsr executed==== TestSpringBean");
 	}
 
 	@Override
@@ -66,11 +66,11 @@ public class TestSpringBean implements InitializingBean, DisposableBean, BeanNam
 	}
 	
 	public void initMethod() {
-		System.out.println("custom initMethod called..");
+		System.out.println("custom initMethod called.TestSpringBean.");
 	}
 	
 	public void destroyMethod() {
-		System.out.println("custom destroyMethod called..");
+		System.out.println("custom destroyMethod called..TestSpringBean");
 	}
 
 }
